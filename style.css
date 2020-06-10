@@ -3,31 +3,39 @@ article, aside, footer, header, nav, section {
   display: block;
 }
 
-body {
-  background-color: #F0F8FF;
-  color: #293241;
+* {
   margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(240, 248, 255);
+  color: rgb(41, 50, 65);
 }
 
 header, main, footer {
   margin: auto;
   padding: 2% 5%;
   max-width: 700px;
-  border-left: 3px double rgba(41,50,65,.2);
-  border-right: 3px double rgba(41,50,65,.2);
+  border-left: 3px double rgba(41, 50, 65, 0.2);
+  border-right: 3px double rgba(41, 50, 65, 0.2);
 }
 
 header, footer {
-  background-color: #293241;
-  color: #F0F8FF;
+  background-color: rgb(41, 50, 65);
+  color: rgb(240, 248, 255);
 }
 
 h1, h6, footer h2 {
   text-align: center;
 }
 
+section, header header, h2, h3, h4, p {
+  margin-bottom: 1em;
+}
+
 a, a:visited {
-  color: #F4D03F;
+  color: rgb(244, 208, 63);
   text-decoration: none;
 }
 
@@ -36,26 +44,27 @@ a:hover, a:focus {
 }
 
 details {
-  background-color: #88ADDC;
-  color: #000000;
+  background-color: rgba(41, 50, 65, 0.1);
+  color: rgb(41, 50, 65);
 }
 
 summary {
-  background-color: #3D5A80;
-  color: #F4D03F;
+  background-color: rgba(41, 50, 65, 0.95);
+  color: rgba(244, 208, 63, 0.9);
   padding: 1%;
 }
 
 details p {
   padding: 1%;
+}
+
+details p:last-child {
   margin: 0;
 }
 
 ul {
   display: flex;
   justify-content: space-around;
-  padding: 0;
-  margin: 0;
 }
 
 nav li, details li, #social li {

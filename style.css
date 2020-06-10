@@ -1,0 +1,4 @@
+/* compatibility for browsers that don't support HTML5 elements*/
+article, aside, footer, header, nav, section {
+  display: block;
+}

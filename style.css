@@ -2,3 +2,40 @@
 article, aside, footer, header, nav, section {
   display: block;
 }
+
+body {
+  background-color: #F0F8FF;
+  color: #293241;
+}
+
+header, main, footer {
+  margin: auto;
+  padding: 2% 10%;
+  max-width: 700px;
+  border-left: 3px double rgba(41,50,65,.2);
+  border-right: 3px double rgba(41,50,65,.2);
+}
+
+header, footer {
+  background-color: #293241;
+  color: #F0F8FF;
+}
+
+h1, h6, footer h2 {
+  text-align: center;
+}
+
+a, a:visited {
+  color: #F4D03F;
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+nav li, #social li {
+  display: inline;
+}

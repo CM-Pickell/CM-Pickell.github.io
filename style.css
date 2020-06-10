@@ -6,11 +6,12 @@ article, aside, footer, header, nav, section {
 body {
   background-color: #F0F8FF;
   color: #293241;
+  margin: 0;
 }
 
 header, main, footer {
   margin: auto;
-  padding: 2% 10%;
+  padding: 2% 5%;
   max-width: 700px;
   border-left: 3px double rgba(41,50,65,.2);
   border-right: 3px double rgba(41,50,65,.2);
@@ -30,12 +31,34 @@ a, a:visited {
   text-decoration: none;
 }
 
+a:hover, a:focus {
+  text-decoration: overline underline;
+}
+
+details {
+  background-color: #88ADDC;
+  color: #000000;
+}
+
+summary {
+  background-color: #3D5A80;
+  color: #F4D03F;
+  padding: 1%;
+}
+
+details p {
+  padding: 1%;
+  margin: 0;
+}
+
 ul {
   display: flex;
   justify-content: space-around;
   padding: 0;
+  margin: 0;
 }
 
-nav li, #social li {
+nav li, details li, #social li {
   display: inline;
+  text-align: center;
 }

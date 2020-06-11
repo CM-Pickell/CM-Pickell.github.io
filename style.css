@@ -13,25 +13,45 @@ body {
   color: rgb(41, 50, 65);
 }
 
-header, main, footer {
+header, nav, main, footer {
   margin: auto;
   padding: 2% 5%;
   max-width: 700px;
   border-left: 3px double rgba(41, 50, 65, 0.2);
   border-right: 3px double rgba(41, 50, 65, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-header, footer {
+header, nav, footer {
   background-color: rgb(41, 50, 65);
   color: rgb(240, 248, 255);
-}
-
-h1, h6, footer h2 {
   text-align: center;
 }
 
-section, header header, h2, h3, h4, p {
-  margin-bottom: 1em;
+nav {
+  position: sticky;
+  top: 0;
+}
+
+h2, h3, h4, p {
+  margin-bottom: 1rem;
+}
+
+details {
+  background-color: rgba(41, 50, 65, 0.1);
+  color: rgb(41, 50, 65);
+}
+
+details:last-child {
+  margin-bottom: 1rem;
+}
+
+summary {
+  background-color: rgba(41, 50, 65, 0.95);
+  color: rgba(244, 208, 63, 0.9);
+  padding: 1%;
 }
 
 a, a:visited {
@@ -43,18 +63,16 @@ a:hover, a:focus {
   text-decoration: overline underline;
 }
 
-details {
-  background-color: rgba(41, 50, 65, 0.1);
-  color: rgb(41, 50, 65);
+ul {
+  display: flex;
+  justify-content: space-around;
 }
 
-summary {
-  background-color: rgba(41, 50, 65, 0.95);
-  color: rgba(244, 208, 63, 0.9);
-  padding: 1%;
+li, span {
+  display: inline;
 }
 
-details p {
+details p, details li {
   padding: 1%;
 }
 
@@ -62,12 +80,13 @@ details p:last-child {
   margin: 0;
 }
 
-ul {
-  display: flex;
-  justify-content: space-around;
+details li {
+  text-align: center;
 }
 
-nav li, details li, #social li {
-  display: inline;
-  text-align: center;
+footer p {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: rgb(61, 90, 128);
+  padding-top: 2rem;
 }

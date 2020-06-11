@@ -65,6 +65,7 @@ a:hover, a:focus {
 
 ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
@@ -82,6 +83,8 @@ details p:last-child {
 
 details li {
   text-align: center;
+  width: 200px;
+  margin-bottom: 2%;
 }
 
 footer p {

@@ -31,6 +31,7 @@ header, nav, footer {
 }
 
 nav {
+  position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
 }
@@ -74,7 +75,7 @@ li, span {
 }
 
 details p, details li {
-  padding: 1%;
+  padding: 2% 1%;
 }
 
 details p:last-child {
@@ -84,7 +85,6 @@ details p:last-child {
 details li {
   text-align: center;
   width: 200px;
-  margin-bottom: 2%;
 }
 
 footer p {

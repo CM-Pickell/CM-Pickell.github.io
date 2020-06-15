@@ -3,9 +3,17 @@ article, aside, footer, header, nav, section {
   display: block;
 }
 
+/* CSS clear */
 * {
   margin: 0;
   padding: 0;
+  outline: 0;
+}
+
+/* general focus elements for keyboard selection */
+:focus {
+  outline: 2px solid rgba(244, 208, 63, 0.9);
+  box-shadow: 0 0 0 5px rgb(61, 90, 128);
 }
 
 body {
@@ -60,7 +68,7 @@ a, a:visited {
   text-decoration: none;
 }
 
-a:hover, a:focus {
+a:hover {
   text-decoration: overline underline;
 }
 
